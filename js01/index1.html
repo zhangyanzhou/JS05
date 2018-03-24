@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!--声明页面编码 utf-8国际编码-->
+    <meta name="Generator" content="Webstorm"><!--使用编辑器-->
+    <meta name="Author" content="流云似海"><!--作者-->
+    <meta name="Keywords" content="作业"><!--关键字-->
+    <meta name="Description" content=""><!--网页描述-->
+    <title>Title</title>
+    <style>
+        body {
+            font-family: "Microsoft YaHei", serif;
+        }
+
+        body, dl, dd, p, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+
+        ol, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        img {
+            border: none;
+        }
+        #wrap1,#wrap2{
+            width : 200px;
+            height: 200px;
+            border:1px solid #000;
+            margin:auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap1">div1</div>
+    <div id="wrap2">div2</div>
+    <script>
+            var wrap1 = document.getElementById("wrap1");
+            var wrap2 = document.getElementById("wrap2");
+            wrap1.onmouseover = function(){
+                wrap2.backgroundColor="yellow";
+            }
+            wrap2.onmouseover = function(){
+                wrap2.backgroundColor="yellow";
+            }
+
+    </script>
+</body>
+</html>
